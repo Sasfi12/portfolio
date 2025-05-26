@@ -1,11 +1,10 @@
 <?php
 
+use App\Http\Controllers\FolioController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('welcome');
-})->name('home');
+Route::get('/', [FolioController::class , "index"]);
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {

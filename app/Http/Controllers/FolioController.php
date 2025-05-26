@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Folio;
-use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 class FolioController extends Controller

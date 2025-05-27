@@ -11,4 +11,5 @@ class FolioController extends Controller
         $folios = Folio::where('id' , '=' , 1)->get();
         return Inertia::render("welcome" , ["folios" => $folios[0]]);
     }
+
 }

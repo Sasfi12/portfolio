@@ -8,7 +8,7 @@ use Inertia\Inertia;
 class FolioController extends Controller
 {
     public function index() {
-        $folios = Folio::where('id' , '=' , 1)->get();
+        $folios = Folio::with("skills")->get();
         return Inertia::render("welcome" , ["folios" => $folios[0]]);
     }
 

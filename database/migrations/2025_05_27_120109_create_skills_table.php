@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("nom");
             $table->string("niveau");
-            $table->foreignId("user_id")->constrained();
+            $table->foreignId("user_id")->constrained("folios");
             $table->timestamps();
         });
     }

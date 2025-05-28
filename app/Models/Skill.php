@@ -10,6 +10,6 @@ class Skill extends Model
     /** @use HasFactory<\Database\Factories\SkillFactory> */
     use HasFactory;
     public function folio() {
-        return $this->belongsTo(Folio::class);
+        return $this->belongsTo(Folio::class , "user_id");
     }
 }

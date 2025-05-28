@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Folio extends Model
 {
      public function projects() {
-        $this->hasMany(Project::class);
+        return $this->hasMany(Project::class , "user_id" , "id");
      }
      public function experiences() {
-        $this->hasMany(Experience::class);
+        return $this->hasMany(Experience::class , "user_id" , "id");
      }
      public function skills() {
-        $this->hasMany(Skill::class);
+        return $this->hasMany(Skill::class , "user_id" , "id");
      }
 }

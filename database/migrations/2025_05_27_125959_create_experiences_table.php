@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('entreprise');
             $table->string('date_debut_fin');
             $table->string("description");
-            $table->foreignId('user_id')->constrained();
+            $table->foreignId('user_id')->constrained("folios");
             $table->timestamps();
         });
     }

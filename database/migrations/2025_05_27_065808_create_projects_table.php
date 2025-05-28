@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string("github_link"); 
             $table->string("demo_link");
             $table->string("image"); 
-            $table->foreignId("id_user")->constrained();
+            $table->foreignId("user_id")->constrained("folios");
             $table->timestamps();
         });
     }

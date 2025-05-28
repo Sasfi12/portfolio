@@ -10,6 +10,6 @@ class Experience extends Model
     /** @use HasFactory<\Database\Factories\ExperienceFactory> */
     use HasFactory;
     public function folio() {
-        return $this->belongsTo(Folio::class);
+        return $this->belongsTo(Folio::class , "user_id");
     }
 }

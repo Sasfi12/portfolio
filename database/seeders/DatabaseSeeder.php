@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Project;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,7 +19,9 @@ class DatabaseSeeder extends Seeder
         $this->call(
             [
                 FolioSeeder::class,
-                SkillSeeder::class
+                SkillSeeder::class,
+                ProjectSeeder::class,
+                ExperienceSeeder::class
             ]
         );
     }

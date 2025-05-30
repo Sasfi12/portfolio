@@ -16,15 +16,15 @@ class SkillSeeder extends Seeder
         DB::table("skills")->insert([
             [
             "nom" => "HTML", 
-            "niveau" => "A", 
+            "niveau" => 80, 
             "user_id" => 1],
             [
             "nom" => "CSS", 
-            "niveau" => "C", 
+            "niveau" => 40, 
             "user_id" => 1],
             [
             "nom" => "JS", 
-            "niveau" => "A", 
+            "niveau" => 45, 
             "user_id" => 1],
 
         ]);

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreExperienceRequest;
 use App\Http\Requests\UpdateExperienceRequest;
 use App\Models\Experience;
+use Inertia\Inertia;
 
 class ExperienceController extends Controller
 {
@@ -13,7 +14,8 @@ class ExperienceController extends Controller
      */
     public function index()
     {
-        //
+        $experiences = Experience::all(); 
+        return Inertia::render('experiences' , ['experiences' , $experiences]);
     }
 
     /**

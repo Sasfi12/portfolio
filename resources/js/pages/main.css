@@ -3,8 +3,24 @@
     width: 200px;
     border: solid;
     border-radius: 100px;
+    animation: sufyan infinite alternate 1s;
 }
 .hero {
     width: 100%;
     font-size: 3rem;
 }
+.project_img {
+    height: 150px;
+    width: 150px;
+}
+/* 
+@keyframes sufyan {
+    from {
+        scale: 1;
+        transform: translateX(-100px);
+    }    
+    to {
+        scale: -1;
+        transform: translateX(100px);
+    }
+} */

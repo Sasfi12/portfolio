@@ -21,5 +21,10 @@ Route::get('/projects', [ProjectController::class , "index"]);
 Route::get('/experience', [ExperienceController::class , "index"]);
 // skill routes
 Route::get('/skills', [SkillController::class , "index"]);
+Route::get('/skills/create' , [SkillController::class , "create"]);
+Route::get('/skills/edit/{id}' , [SkillController::class , "edit"]);
+Route::post('/skills/store' , [SkillController::class , "store"]);
+Route::delete('/skills/delete/{id}' , [SkillController::class , "destroy"]);
+Route::patch('/skills/patch/{id}' , [SkillController::class , "update"]);
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

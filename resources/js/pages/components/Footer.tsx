@@ -14,7 +14,10 @@ export default function Footer() {
                 <a  className="hover:underline me-4 md:me-6">Dolor</a>
             </li>
             <li>
-                <a  className="hover:underline">Sit</a>
+                <a  className="hover:underline me-4 md:me-6">Sit</a>
+            </li>
+            <li>
+                <a  className="hover:underline me-4 md:me-6">Amet</a>
             </li>
         </ul>
         </div>

@@ -155,9 +155,14 @@
 
     body {
         @apply bg-background text-foreground;
-        height: 100vh;
-        width: 100vw;
-        background-color: blueviolet;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: rgb(192, 145, 236);
         color: black;
+        #app {
+            min-height: 100vh !important;
+            min-width: 100vw !important;
+        }
+        
     }
 }
